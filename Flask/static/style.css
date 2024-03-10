@@ -91,3 +91,16 @@ nav {
 .submit {
   border: none;
 }
+
+.tttTable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.tttChoice {
+  height: 100px;
+  width: 100px;
+  border: none;
+}
