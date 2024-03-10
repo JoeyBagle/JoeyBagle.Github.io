@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for
 from logging.config import dictConfig
 import math
-import numpy
 # import jinja2
 
 dictConfig({
