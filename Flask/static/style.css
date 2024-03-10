@@ -1,0 +1,93 @@
+body {
+  font-family: sans-serif;
+  margin: 0; 
+  padding: 0;
+}
+
+nav {
+  left: -10px;
+}
+
+.body {
+  margin: 10px;
+}
+
+.titlebar {
+    box-shadow: 0px 2px #000000;
+    background-color: lightgrey;
+    width: 100%;
+    padding:0px;
+    position: sitcky;
+}
+  
+.MENU {
+    padding-right: 7px;
+    background: #ffffff;
+    border: none;
+    height: 30px;
+    font-size: 17px;
+    text-align: left;
+    background-color: lightgray;
+}
+  
+.menubutton {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1.2));
+    width: 20px;
+    height: 15px;
+    border-radius: 3px;
+    border: 2px none;
+    
+    
+    &::before {
+      content: "";
+      display: block;
+      box-sizing: border-box;
+      position: absolute;
+      width: 18px;
+      height: 2px;
+      background: currentColor;
+      border-radius: 3px;
+      top: 2px;
+      left: 2px;
+      box-shadow: 0 4px 0, 0 8px 0
+    }
+}
+  
+  .dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    width: fit-content;
+    background-color: white;
+  }
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-top-style: none;
+}
+  
+.dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+    
+    &:hover {
+      background-color: darkgrey;
+    }
+}
+
+.submit {
+  border: none;
+}
