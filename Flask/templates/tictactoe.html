@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <header>
+      {% include "titlebar.html" %}
+    </header>
+    <div class="tttTable">
+      <form action="" method="post">
+        <table>
+          {% for j in range(0, 3) %}
+          <tr>
+            {% for i in range(0, 3) %}
+            <td>
+              <button class="tttChoice" type="submit" name="choice" value="{{ j*3+i }}"></button>
+            </td>
+            {% endfor %}
+          </tr>
+          {% endfor %}
+        </table>
+      </form>
+    </div>
+    <div class="body">
+      {{moveIsNotValid}}
+    </div>
+  </body>
+</html>
